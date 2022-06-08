@@ -1,5 +1,6 @@
 Acloud guru link:
 https://learn.acloud.guru/handson/54ec2924-5f56-4c38-a11f-be6375bc8b4d
+https://www.youtube.com/watch?v=FAnQTgr04mU&t=339s
 
 AKS
 ===
@@ -28,3 +29,22 @@ kubectl apply -f mosquitto-vol.yaml
 kubectl exec -it mosquitto-5f79855884-2rw2w -- /bin/sh
 cd mosquitto/secret
 
+=================================
+=================================
+
+Create AKS Cluster
+=================================
+Create just the cluster, without any integrations with Azure Monitor, or Azure Policy.
+You can use either the provided Service principal or a System-assigned managed identity.
+The cluster can be created with the Azure Portal, CLI, PowerShell, or ARM template.
+
+Deploy the Application
+=================================
+Create a deployment to include two replicas of the application. The deployment can be applied in the Azure Portal or with the Azure Cloud Shell.
+The application should use the NGINX public Docker Hub image.
+Include resource minimum and maximum limits.
+
+Access the Application Externally
+=================================
+Add a LoadBalancer service to generate an external IP. The service can be added in the Azure Portal, or with the Azure Cloud Shell using the kubectl command line tool.
+Confirm access to the application using the external IP.
