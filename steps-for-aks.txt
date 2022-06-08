@@ -1,5 +1,6 @@
 AKS
 ===
+ssh-keygen -t rsa -b 1024 (Overwrite the existing keys)
 az group list 
 ResourceGroup=491-5aa87ef0-deploying-and-accessing-an-applicatio  #This would be the variable which consists the group name
 az aks create --resource-group $ResourceGroup --name Cluster01 --node-count 3 --generate-ssh-keys --node-vm-size Standard_B2s --enable-managed-identity
