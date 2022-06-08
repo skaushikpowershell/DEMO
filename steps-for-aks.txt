@@ -1,3 +1,6 @@
+Acloud guru link:
+https://learn.acloud.guru/handson/54ec2924-5f56-4c38-a11f-be6375bc8b4d
+
 AKS
 ===
 ssh-keygen -t rsa -b 1024 (Overwrite the existing keys)
