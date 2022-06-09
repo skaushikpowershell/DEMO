@@ -13,6 +13,12 @@ The objective of this exercise is to undertsnd how CongifMaps and Secrets would 
 
 Create just the cluster, without any integrations with Azure Monitor, or Azure Policy.
 
+Navigate in the Azure portal as shown in the images below to access the cli and configure the storage for creating the Kubernetes cluster
+
+![Image](Images/console_access.jpg)
+
+![Image](Images/bash_Powershell.jpg)
+
 For creating a cluster, storage has to be mounted. A message would be displayed as shown in the image below.
 
 ![Image](Images/No_Storage_Mounted.jpg)
