@@ -1,4 +1,4 @@
-# <ins> Ansible Lab with RHEL8 machines </ins>
+# <ins> Create K8s cluster on Azure and deploy a application </ins>
 
 This document helps explaining how to deploy an application using Kubernetes via Azure.
 The objective of this exercise is to undertsnd how CongifMaps and Secrets would work when we deploy an application using Kubernetes. 
