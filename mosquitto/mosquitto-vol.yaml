@@ -32,5 +32,3 @@ spec:
         - name: mosquitto-secret
           secret:
             secretName: mosquitto-secret-file
-
-	
