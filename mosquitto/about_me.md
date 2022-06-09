@@ -30,7 +30,7 @@ The cluster in this scenario was build using cli az commands.
 ```ResourceGroup=491-5aa87ef0-deploying-and-accessing-an-applicatio  #This would be the variable which consists the group name```
 ```az aks create --resource-group $ResourceGroup --name Cluster01 --node-count 3 --generate-ssh-keys --node-vm-size Standard_B2s --enable-managed-identity```
 
-### Deploy the Application
+### <ins>Deploy the Application</ins>
 =================================
 
 Create a deployment to include one replica of the application. The deployment can be applied in the Azure Portal or with the Azure Cloud Shell.
@@ -50,7 +50,7 @@ It is important that the config-file and the secret-file be deployed first so th
 ```kubectl apply -f mosquitto-vol.yaml```
 ```kubectl get pods```
 
-### Access the Application to check 
+### <ins>Access the Application to check</ins> 
 =================================
 
 In order to access the container to see the application, we can use 
