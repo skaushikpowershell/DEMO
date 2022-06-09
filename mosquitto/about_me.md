@@ -1,10 +1,10 @@
-# Ansible Lab with RHEL8 machines
+# <ins> Ansible Lab with RHEL8 machines </ins>
 
 This document helps explaining how to deploy an application using Kubernetes via Azure.
 The objective of this exercise is to undertsnd how CongifMaps and Secrets would work when we deploy an application using Kubernetes. 
-### The first objective: 
+### <ins> The first objective: </ins> 
   - Here we are deploying an image *eclipse-mosquitto:1.6.2* using a deployment.yaml file. We would also be changing the config file ```mosquitto/config/mosquitto.conf``` from the default one to the one what we have in our configmap.
-### The second objective: 
+### <ins> The second objective: </ins>
   - We are going to place the secret file we create and place it in the path ```mosquitto/secret```
 
 Github Repo:
@@ -20,14 +20,17 @@ Add the public keys to github to get the server to clone/pull the code.
 Create just the cluster, without any integrations with Azure Monitor, or Azure Policy.
 
 For creating a cluster, storage has to be mounted. A message would be displayed as shown in the image below.
-![](images/No_Storage_Mounted.jpg)
+![Image](images/No_Storage_Mounted.jpg)
 
 Upon clicking on advanced settings we would have to confgure storage/file share with a unique ID (In the example shown it's the first 6 alphanumeric places of the resource which I have physically entered.)
-![](images/Create_Storage.jpg)
+![Image](images/Create_Storage.jpg)
 
 The cluster in this scenario was build using cli az commands.
+
 ```az group list```
+
 ```ResourceGroup=491-5aa87ef0-deploying-and-accessing-an-applicatio  #This would be the variable which consists the group name```
+
 ```az aks create --resource-group $ResourceGroup --name Cluster01 --node-count 3 --generate-ssh-keys --node-vm-size Standard_B2s --enable-managed-identity```
 
 ### <ins>Deploy the Application</ins>
