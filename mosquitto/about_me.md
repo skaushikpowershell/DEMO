@@ -31,7 +31,6 @@ The cluster in this scenario was build using cli az commands.
 ```az aks create --resource-group $ResourceGroup --name Cluster01 --node-count 3 --generate-ssh-keys --node-vm-size Standard_B2s --enable-managed-identity```
 
 ### <ins>Deploy the Application</ins>
-=================================
 
 Create a deployment to include one replica of the application. The deployment can be applied in the Azure Portal or with the Azure Cloud Shell.
 The application should use the eclipse-mosquitto:1.6.2 image.
@@ -51,7 +50,6 @@ It is important that the config-file and the secret-file be deployed first so th
 ```kubectl get pods```
 
 ### <ins>Access the Application to check</ins> 
-=================================
 
 In order to access the container to see the application, we can use 
 kubectl exec -it mosquitto-5f79855884-2rw2w -- /bin/sh
