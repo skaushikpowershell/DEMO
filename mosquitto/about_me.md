@@ -7,7 +7,7 @@ The objective of this exercise is to undertsnd how CongifMaps and Secrets would 
 ### <ins> The second objective: </ins>
   - We are going to place the secret file we create and place it in the path ```mosquitto/secret```
 
-## <ins>What we will be doing</ins>
+### <ins>What we will be doing</ins>
 
 ### <ins>Create AKS Cluster</ins>
 
