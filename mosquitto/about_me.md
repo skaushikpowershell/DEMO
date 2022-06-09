@@ -21,13 +21,11 @@ Create just the cluster, without any integrations with Azure Monitor, or Azure P
 
 For creating a cluster, storage has to be mounted. A message would be displayed as shown in the image below.
 
-![Getting Started](Images/No_Storage_Mounted.jpg)
-
 ![Image](Images/No_Storage_Mounted.jpg)
 
 Upon clicking on advanced settings we would have to confgure storage/file share with a unique ID (In the example shown it's the first 6 alphanumeric places of the resource which I have physically entered.)
 
-![Getting Started](Images/Create_Storage.jpg)
+![Image](Images/Create_Storage.jpg)
 
 The cluster in this scenario was build using cli az commands.
 
