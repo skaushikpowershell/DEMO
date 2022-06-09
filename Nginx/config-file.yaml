@@ -6,3 +6,5 @@ data:
   index.html: |
     <title>Welcome to nginx which we created</title>
     <h1>Welcome to our own nginx!</h1>
+  Name: Kaushik
+  Company: Nexturn

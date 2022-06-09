@@ -35,6 +35,9 @@ spec:
           limits: 
             cpu: 250m
             memory: 256Mi
+        envFrom:
+          - configMapRef:
+            name: nginx-config-file   
         volumeMounts:
             - name: nginx-conf
               mountPath: /usr/share/nginx/html    
