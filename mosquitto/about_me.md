@@ -20,10 +20,12 @@ Add the public keys to github to get the server to clone/pull the code.
 Create just the cluster, without any integrations with Azure Monitor, or Azure Policy.
 
 For creating a cluster, storage has to be mounted. A message would be displayed as shown in the image below.
-![Image](./images/No_Storage_Mounted.jpg)
+
+![Getting Started](Images/No_Storage_Mounted.jpg)
 
 Upon clicking on advanced settings we would have to confgure storage/file share with a unique ID (In the example shown it's the first 6 alphanumeric places of the resource which I have physically entered.)
-![Image](./images/Create_Storage.jpg)
+
+![Getting Started](Images/Create_Storage.jpg)
 
 The cluster in this scenario was build using cli az commands.
 
