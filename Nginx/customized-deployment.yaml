@@ -30,20 +30,20 @@ spec:
           limits: 
             cpu: 250m
             memory: 256Mi
-        env:
-          - name: My_Name
-            valueFrom:
-              configMapKeyRef:
-                name: nginx-config-file
-                key: Name
-          - name: My_Company
-            valueFrom:
-              configMapKeyRef:
-                name: nginx-config-file
-                key: Company
-        envFrom:
-          - configMapRef:
-              name: env-config   
+#        env:
+#          - name: My_Name
+#            valueFrom:
+#              configMapKeyRef:
+#                name: nginx-config-file
+#                key: Name
+#          - name: My_Company
+#            valueFrom:
+#              configMapKeyRef:
+#                name: nginx-config-file
+#                key: Company
+#        envFrom:
+#          - configMapRef:
+#              name: env-config   
         volumeMounts:
             - name: nginx-config-file
               mountPath: /usr/share/nginx/html    
