@@ -7,16 +7,7 @@ The objective of this exercise is to undertsnd how CongifMaps and Secrets would 
 ### <ins> The second objective: </ins>
   - We are going to place the secret file we create and place it in the path ```mosquitto/secret```
 
-Github Repo:
-https://github.com/skaushikpowershell/DEMO
-Run this command on cloudhsell (BASH)```ssh-keygen -t rsa -b 1024``` (Overwrite the existing keys) as they are not in openssh format. 
-Add the public keys to github to get the server to clone/pull the code.
-
-Do a gitclone to get the content in the git repo
-
-``` git clone git@github.com:skaushikpowershell/DEMO.git ```
-
-## What we will be doing
+## <ins>What we will be doing</ins>
 
 ### <ins>Create AKS Cluster</ins>
 
@@ -41,6 +32,15 @@ The cluster in this scenario was build using cli az commands.
 In order to connect to the cluster we need to run the kubectl commands we need to run the below command
 
 ```az aks get-credentials --name Cluster01 --resource-group $ResourceGroup```
+
+Github Repo:
+https://github.com/skaushikpowershell/DEMO
+Run this command on cloudhsell (BASH)```ssh-keygen -t rsa -b 1024``` (Overwrite the existing keys) as they are not in openssh format. 
+Add the public keys to github to get the server to clone/pull the code.
+
+Do a gitclone to get the content in the git repo
+
+``` git clone git@github.com:skaushikpowershell/DEMO.git ```
 
 ### <ins>Deploy the Application</ins>
 
