@@ -12,6 +12,9 @@ https://github.com/skaushikpowershell/DEMO
 Run this command on cloudhsell (BASH)```ssh-keygen -t rsa -b 1024``` (Overwrite the existing keys) as they are not in openssh format. 
 Add the public keys to github to get the server to clone/pull the code.
 
+Do a gitclone to get the content in the git repo
+
+``` git clone git@github.com:skaushikpowershell/DEMO.git ```
 
 ## What we will be doing
 
@@ -61,5 +64,5 @@ It is important that the config-file and the secret-file be deployed first so th
 ### <ins>Access the Application to check</ins> 
 
 In order to access the container to see the application, we can use 
-kubectl exec -it mosquitto-5f79855884-2rw2w -- /bin/sh
+``` kubectl exec -it mosquitto-5f79855884-2rw2w -- /bin/sh ```
 Here we can check ```mosquitto/config/mosquitto.conf``` and ```mosquitto/secret```
