@@ -23,6 +23,8 @@ For creating a cluster, storage has to be mounted. A message would be displayed 
 
 ![Getting Started](Images/No_Storage_Mounted.jpg)
 
+![Image](Images/No_Storage_Mounted.jpg)
+
 Upon clicking on advanced settings we would have to confgure storage/file share with a unique ID (In the example shown it's the first 6 alphanumeric places of the resource which I have physically entered.)
 
 ![Getting Started](Images/Create_Storage.jpg)
