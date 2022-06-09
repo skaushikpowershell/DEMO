@@ -35,7 +35,10 @@ In order to connect to the cluster we need to run the kubectl commands we need t
 
 Github Repo:
 https://github.com/skaushikpowershell/DEMO
-Run this command on cloudhsell (BASH)```ssh-keygen -t rsa -b 1024``` (Overwrite the existing keys) as they are not in openssh format. 
+Run this command on cloudhsell (BASH)
+
+```ssh-keygen -t rsa -b 1024``` (Overwrite the existing keys) as they are not in openssh format. 
+
 Add the public keys to github to get the server to clone/pull the code.
 
 Do a gitclone to get the content in the git repo
