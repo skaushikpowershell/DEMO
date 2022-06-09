@@ -14,11 +14,11 @@ spec:
     metadata:
       # Used to logically group pods together
       labels: 
-        app: aks-web-app
+        app: aks-web-app-standard
     # Specific details about the containers in the Pod
     spec: 
       containers:
-      - name: aks-web-app-container
+      - name: aks-web-app-container--standard
         # Docker Hub image to use
         image: nginx 
         # Define ports to expose
