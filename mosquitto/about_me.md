@@ -35,6 +35,10 @@ The cluster in this scenario was build using cli az commands.
 
 ```az aks create --resource-group $ResourceGroup --name Cluster01 --node-count 3 --generate-ssh-keys --node-vm-size Standard_B2s --enable-managed-identity```
 
+In order to connect to the cluster we need to run the kubectl commands we need to run the below command
+
+```az aks get-credentials --name Cluster01 --resource-group $ResourceGroup```
+
 ### <ins>Deploy the Application</ins>
 
 Create a deployment to include one replica of the application. The deployment can be applied in the Azure Portal or with the Azure Cloud Shell.
