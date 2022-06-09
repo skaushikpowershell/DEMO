@@ -8,11 +8,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mosquitto 
+      app: mosquitto
   template:
     metadata:
       labels:
-        app: mosquitto   
+        app: mosquitto
     spec:
       containers:
         - name: mosquitto
@@ -20,14 +20,17 @@ spec:
           ports:
             - containerPort: 1883
           volumeMounts:
-            - name: mosquitto-config
+            - name: mosquitto-conf
               mountPath: /mosquitto/config
             - name: mosquitto-secret
-              mountPath: /mosquitto/secret
+              mountPath: /mosquitto/secret  
+              readOnly: true
       volumes:
-        - name: mosquitto-config
+        - name: mosquitto-conf
           configMap:
             name: mosquitto-config-file
         - name: mosquitto-secret
           secret:
-            name: mosquitto-secret-file	  	
+            secretName: mosquitto-secret-file
+
+	
