@@ -60,12 +60,15 @@ It is important that the config-file and the secret-file be deployed first so th
 ```cd DEMO/mosquitto```
 
 ```kubectl apply -f config-file.yaml```
+
 ```kubectl get configmaps```
 
 ```kubectl apply -f secret-file.yaml```
+
 ```kubectl get secrets```
 
 ```kubectl apply -f mosquitto-vol.yaml```
+
 ```kubectl get pods```
 
 ### <ins>Access the Application to check</ins> 
