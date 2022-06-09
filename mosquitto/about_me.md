@@ -47,7 +47,7 @@ It is important that the config-file and the secret-file be deployed first so th
 
 ``` git clone git@github.com:skaushikpowershell/DEMO.git ```
 
-```cd mosquitto```
+```cd DEMO/mosquitto```
 
 ```kubectl apply -f config-file.yaml```
 ```kubectl get configmaps```
