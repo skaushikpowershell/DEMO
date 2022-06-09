@@ -39,9 +39,9 @@ spec:
           - configMapRef:
             name: nginx-config-file   
         volumeMounts:
-            - name: nginx-conf
+            - name: nginx-config-file
               mountPath: /usr/share/nginx/html    
       volumes:
-        - name: nginx-conf
+        - name: nginx-config-file
           configMap:
             name: nginx-config-file     
