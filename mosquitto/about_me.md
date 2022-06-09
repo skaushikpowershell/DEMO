@@ -15,8 +15,8 @@ Add the public keys to github to get the server to clone/pull the code.
 
 ## What we will be doing
 
-### Create AKS Cluster
-=================================
+### <ins>Create AKS Cluster</ins>
+
 Create just the cluster, without any integrations with Azure Monitor, or Azure Policy.
 
 For creating a cluster, storage has to be mounted. A message would be displayed as shown in the image below.
@@ -32,6 +32,7 @@ The cluster in this scenario was build using cli az commands.
 
 ### Deploy the Application
 =================================
+
 Create a deployment to include one replica of the application. The deployment can be applied in the Azure Portal or with the Azure Cloud Shell.
 The application should use the eclipse-mosquitto:1.6.2 image.
 It is important that the config-file and the secret-file be deployed first so that the deployment.yaml file can relate to the configmaps and secrets which is being pointed to 
@@ -51,6 +52,7 @@ It is important that the config-file and the secret-file be deployed first so th
 
 ### Access the Application to check 
 =================================
+
 In order to access the container to see the application, we can use 
 kubectl exec -it mosquitto-5f79855884-2rw2w -- /bin/sh
 Here we can check ```mosquitto/config/mosquitto.conf``` and ```mosquitto/secret```
