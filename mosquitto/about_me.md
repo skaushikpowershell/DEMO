@@ -51,8 +51,6 @@ Create a deployment to include one replica of the application. The deployment ca
 The application should use the eclipse-mosquitto:1.6.2 image.
 It is important that the config-file and the secret-file be deployed first so that the deployment.yaml file can relate to the configmaps and secrets which is being pointed to 
 
-``` git clone git@github.com:skaushikpowershell/DEMO.git ```
-
 ```cd DEMO/mosquitto```
 
 ```kubectl apply -f config-file.yaml```
