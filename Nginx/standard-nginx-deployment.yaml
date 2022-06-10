@@ -3,22 +3,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   # Name of deployment - Required
-  name: standard-Nginx-deployment
+  name: standard-nginx-deployment
 spec:
   replicas: 2
   selector:
     matchLabels: 
-      app: standard-Nginx-web-app
+      app: standard-nginx-web-app
   # Pod template which decribes the pod you want to deploy
   template: 
     metadata:
       # Used to logically group pods together
       labels: 
-        app: standard-Nginx-web-app
+        app: standard-nginx-web-app
     # Specific details about the containers in the Pod
     spec: 
       containers:
-      - name: standard-Nginx-container
+      - name: standard-nginx-container
         # Docker Hub image to use
         image: nginx 
         # Define ports to expose
