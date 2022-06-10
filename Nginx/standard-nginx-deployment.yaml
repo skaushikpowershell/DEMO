@@ -3,22 +3,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   # Name of deployment - Required
-  name: aks-web-app-deployment-standard 
+  name: standard-Nginx-deployment
 spec:
   replicas: 2
   selector:
     matchLabels: 
-      app: aks-web-app
+      app: standard-Nginx-web-app
   # Pod template which decribes the pod you want to deploy
   template: 
     metadata:
       # Used to logically group pods together
       labels: 
-        app: aks-web-app-standard
+        app: standard-Nginx-web-app
     # Specific details about the containers in the Pod
     spec: 
       containers:
-      - name: aks-web-app-container--standard
+      - name: standard-Nginx-container
         # Docker Hub image to use
         image: nginx 
         # Define ports to expose
