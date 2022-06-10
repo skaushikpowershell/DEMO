@@ -12,4 +12,4 @@ spec:
   - port: 80
   # Used to tell the Service which Pods to associate with
   selector:
-    app: standard-Nginx-web-app
+    app: standard-nginx-web-app
