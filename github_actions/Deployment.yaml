@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+ # The type of workload we are creating 
+kind: Deployment
+metadata:
+  # Name of deployment - Required
+  name: Just_an_image
+spec:
+  selector:
+    matchLabels: 
+      app: Just_an_image
+  # Pod template which decribes the pod you want to deploy
+  template: 
+    metadata:
+      # Used to logically group pods together
+      labels: 
+        app: Just_an_image
+    # Specific details about the containers in the Pod
+    spec: 
+      containers:
+      - name: Just_an_image
+        image: kaushikseetharam/image:1.0
+        ports: 
+        - containerPort: 80
+          name: http 
+        resources:
+          requests: 
+            cpu: 100m
+            memory: 128Mi
+          limits: 
+            cpu: 250m
+            memory: 256Mi
