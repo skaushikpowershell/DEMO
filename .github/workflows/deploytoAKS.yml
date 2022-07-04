@@ -51,7 +51,10 @@ jobs:
         run: kubectl get nodes
  
       - name: Apply Deployment.yaml
-        run: kubectl apply -f github_actions/Deployment.yaml      
+        run: kubectl apply -f github_actions/Deployment.yaml   
+
+      - name: Apply service.yaml
+        run: kubectl apply -f github_actions/service.yaml   
 
 
  
