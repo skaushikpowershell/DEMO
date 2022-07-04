@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: docker build
-        run: docker build . -t image:'${{github.sha}}'
+        run: docker build -t image:'${{github.sha}}'
         
       - name: docker login
         run: docker login --username '${{secrets.DOCKER_LOGIN}}' --password '${{secrets.DOCKER_PASSWORD}}'  
