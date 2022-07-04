@@ -47,8 +47,11 @@ jobs:
       - name: Apply Deployment.yaml
         run: az aks get-credentials --name Cluster01 --resource-group 1-f4c23293-playground-sandbox 
 
-      - name: Apply Deployment.yaml
+      - name: get nodes
         run: kubectl get nodes
+ 
+      - name: Apply Deployment.yaml
+        run: kubectl apply -f github_actions/Deployment.yaml      
 
 
  
