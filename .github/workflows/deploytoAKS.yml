@@ -36,4 +36,10 @@ jobs:
         run: docker tag image:'${{github.sha}}' '${{secrets.DOCKER_LOGIN}}'/image:'${{github.sha}}'
         
       - name: docker push
-        run: docker push '${{secrets.DOCKER_LOGIN}}'/image:'${{github.sha}}'        
+        run: docker push '${{secrets.DOCKER_LOGIN}}'/image:'${{github.sha}}'       
+
+      - name: az login
+        run: az login -u '${{secrets.Azure_LOGIN}}' -p '${{secrets.Azure_PASSWORD}}'  
+
+
+ 
