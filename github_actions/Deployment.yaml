@@ -3,21 +3,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   # Name of deployment - Required
-  name: Just_an_image
+  name: justanimage
 spec:
   selector:
     matchLabels: 
-      app: Just_an_image
+      app: justanimage
   # Pod template which decribes the pod you want to deploy
   template: 
     metadata:
       # Used to logically group pods together
       labels: 
-        app: Just_an_image
+        app: justanimage
     # Specific details about the containers in the Pod
     spec: 
       containers:
-      - name: Just_an_image
+      - name: justanimage
         image: kaushikseetharam/image:1.0
         ports: 
         - containerPort: 80

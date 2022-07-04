@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
 # Name of Service - Required
-  name: Just_an_image
+  name: justanimage
 # Specific details about the Service
 spec:
 # Type of Service to be deployed
@@ -13,4 +13,4 @@ spec:
     targetPort: 80
   # Used to tell the Service which Pods to associate with
   selector:
-    app: Just_an_image
+    app: justanimage
